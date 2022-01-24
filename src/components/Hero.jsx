@@ -2,11 +2,16 @@ import React, { useEffect } from "react";
 import Photo from "./Photo";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Arrow } from "./Arrow";
+import { Navbar } from "./Navbar";
 
 const photo = {
   visible: { x: 0, transition: { duration: 1 } },
   hidden: { x: 20 },
+};
+
+const title = {
+  visible: { x: 0, transition: { duration: 1 } },
+  hidden: { x: -20 },
 };
 
 export const Hero = ({ darkMode, setDarkMode }) => {
@@ -21,6 +26,7 @@ export const Hero = ({ darkMode, setDarkMode }) => {
 
   return (
     <>
+      <Navbar />
       <div className="text-center flex flex-col gap-y-9 items-center md:flex-row md:items-center m-0 absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 ">
         <motion.div
           ref={ref}
@@ -31,7 +37,15 @@ export const Hero = ({ darkMode, setDarkMode }) => {
         >
           <Photo darkMode={darkMode} />
         </motion.div>
-        <Arrow darkMode={darkMode} setDarkMode={setDarkMode} />
+        <motion.h1
+          ref={ref}
+          animate={controls}
+          initial="hidden"
+          variants={title}
+          className="text-xl font-mono"
+        >
+          Hi, I am <b>Aravind</b>. <br /> A hobby react developer.
+        </motion.h1>
       </div>
     </>
   );

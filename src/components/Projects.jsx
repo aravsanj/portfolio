@@ -1,19 +1,13 @@
 import React, { useEffect } from "react";
-import { BsGoogle } from "react-icons/bs";
-import { SiReact, SiFastapi, SiTailwindcss } from "react-icons/si";
+import { ImCart } from "react-icons/im";
+import { SiReact, SiRedux, SiMaterialui } from "react-icons/si";
 import { FaCheck } from "react-icons/fa";
-import { CgProfile, CgMenuMotion } from "react-icons/cg";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const google = {
   visible: { y: 0, transition: { duration: 1 } },
   hidden: { y: -50 },
-};
-
-const portfolio = {
-  visible: { y: 0, transition: { duration: 1 } },
-  hidden: { y: 50 },
 };
 
 export const Projects = () => {
@@ -40,8 +34,8 @@ export const Projects = () => {
           className="border-2 shadow-xl w-80 h-80 p-5 pb-20 rounded-lg flex flex-col justify-between"
         >
           <div className="">
-            <BsGoogle className="text-5xl mx-auto" />
-            <h2 className="text-3xl mb-10">Google Mock</h2>
+            <ImCart className="text-5xl mx-auto" />
+            <h2 className="text-3xl mb-10">Ecommerce</h2>
           </div>
           <ul className="text-left h-2/5 w-3/5 mx-auto">
             <li>
@@ -51,18 +45,18 @@ export const Projects = () => {
             </li>
             <li>
               <FaCheck className="text-green-500 inline" />
-              <SiTailwindcss className="inline mx-2" />
-              Tailwind
+              <SiRedux className="inline mx-2" />
+              Redux
             </li>
             <li>
               <FaCheck className="text-green-500 inline" />
-              <SiFastapi className="inline mx-2" />
-              Raipd API
+              <SiMaterialui className="inline mx-2" />
+              MUI 5
             </li>
           </ul>
           <div className="flex justify-center mt-8 gap-x-3">
             <a
-              href="https://google-mock.netlify.app/"
+              href="https://ecommerce-mock.netlify.app/"
               target="_blank"
               rel="noreferrer"
               className="bg-indigo-800 rounded px-6 py-1"
@@ -70,54 +64,7 @@ export const Projects = () => {
               Demo
             </a>
             <a
-              href="https://google-mock.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-              className="bg-pink-800 rounded px-6 py-1"
-            >
-              Code
-            </a>
-          </div>
-        </motion.div>
-        <motion.div
-          ref={ref}
-          animate={controls}
-          initial={window.innerWidth > 1024 ? "hidden" : ""}
-          variants={portfolio}
-          className="border-2 shadow-xl w-80 h-80 p-5 pb-20 rounded-lg flex flex-col justify-between"
-        >
-          <div className="">
-            <CgProfile className="text-5xl mx-auto" />
-            <h2 className="text-3xl mb-10">Portfolio Site</h2>
-          </div>
-          <ul className="text-left h-2/5 w-3/5 mx-auto">
-            <li>
-              <FaCheck className="text-green-500 inline" />
-              <SiReact className="inline mx-2" />
-              React{" "}
-            </li>
-            <li>
-              <FaCheck className="text-green-500 inline" />
-              <SiTailwindcss className="inline mx-2" />
-              Tailwind
-            </li>
-            <li>
-              <FaCheck className="text-green-500 inline" />
-              <CgMenuMotion className="inline mx-2" />
-              Framer Motion
-            </li>
-          </ul>
-          <div className="flex justify-center mt-8 gap-x-3">
-            <a
-              href="https://aravindsanjeev.com/"
-              target="_blank"
-              rel="noreferrer"
-              className="bg-indigo-800 rounded px-6 py-1"
-            >
-              Demo
-            </a>
-            <a
-              href="https://aravindsanjeev.com/"
+              href="https://github.com/aravsanj/Ecommerce/"
               target="_blank"
               rel="noreferrer"
               className="bg-pink-800 rounded px-6 py-1"

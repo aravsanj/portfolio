@@ -9,6 +9,7 @@ import {
   SiBootstrap,
   SiTailwindcss,
   SiGatsby,
+  SiMaterialui,
 } from "react-icons/si";
 import { ImLibrary } from "react-icons/im";
 import { motion, useAnimation } from "framer-motion";
@@ -112,6 +113,10 @@ export const Technologies = () => {
             <li>
               <SiGatsby className="inline mx-2" />
               Gatsby
+            </li>
+            <li>
+              <SiMaterialui className="inline mx-2" />
+              MUI 5
             </li>
           </ul>
         </motion.div>

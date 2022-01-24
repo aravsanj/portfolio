@@ -9,7 +9,7 @@ const App = () => {
 
   return (
     <div className={darkMode ? "dark" : ""}>
-      <div className="select-none scroll-smooth lg:snap-y lg:snap-mandatory overflow-y-scroll  h-screen w-screen text-white bg-gradient-to-r from-[#8A2387] via-[#E94057] to-[#F27121] dark:bg-gradient-to-r dark:from-[#0f0c29] dark:via-[#302b63] dark:to-[#24243e]">
+      <div className="select-none scroll-smooth lg:snap-y lg:snap-mandatory text-white bg-gradient-to-r from-[#8A2387] via-[#E94057] to-[#F27121] dark:bg-gradient-to-r dark:from-[#0f0c29] dark:via-[#302b63] dark:to-[#24243e]">
         <section id="hero" className="min-h-screen p-5 snap-start">
           <div className></div>
           <div className="">
