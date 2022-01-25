@@ -26,7 +26,7 @@ export const Hero = ({ darkMode, setDarkMode }) => {
 
   return (
     <>
-      <Navbar />
+      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <div className="text-center flex flex-col gap-y-9 items-center md:flex-row md:items-center m-0 absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 ">
         <motion.div
           ref={ref}
