@@ -8,7 +8,7 @@ const Contact = (props: Props) => {
     <section className="flex flex-col gap-y-10 sm:gap-y-14 justify-between items-center p-4  pt-8 pb-20 text-[#101820] bg-[#FDFD96]">
       <div className="flex flex-col gap-y-2 items-center">
         <BsFillChatRightDotsFill className="text-3xl" />
-        <h3 className="text-2xl sm:text-3xl">Let's chat</h3>
+        <h3 className="text-2xl sm:text-3xl">{`Let's chat`}</h3>
       </div>
       <form
         className="flex flex-col gap-y-4 w-[350px]"
@@ -33,10 +33,9 @@ const Contact = (props: Props) => {
         />
         <textarea
           placeholder="Your Message"
-          class="pl-4 pt-2"
           name="message"
-          rows="5"
-          className="w-full"
+          rows={5}
+          className="w-full pl-4 pt-2"
           required
         ></textarea>
         <button
