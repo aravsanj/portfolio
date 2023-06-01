@@ -7,6 +7,7 @@ import {
   SiFigma,
   SiBootstrap,
   SiWebflow,
+  SiTailwindcss,
 } from "react-icons/si";
 import { GiSkills } from "react-icons/gi";
 import { BsGit } from "react-icons/bs";
@@ -52,8 +53,8 @@ const Skills = (props: Props) => {
           <a target="blank" href="https://www.figma.com/">
             <SiFigma className="text-2xl sm:text-3xl grow" />
           </a>
-          <a target="blank" href="https://getbootstrap.com/">
-            <SiBootstrap className="text-2xl sm:text-3xl grow" />
+          <a target="blank" href="https://tailwindcss.com/">
+            <SiTailwindcss className="text-2xl sm:text-3xl grow" />
           </a>
           <a target="blank" href="https://webflow.com/">
             <SiWebflow className="text-2xl sm:text-3xl grow" />
