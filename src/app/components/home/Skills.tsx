@@ -22,7 +22,7 @@ const Skills = (props: Props) => {
           <GiSkills className="text-3xl" />
           <h3 className="text-2xl sm:text-3xl">My skills</h3>
         </div>
-        <div className="grid grid-cols-3 grid-rows-2 gap-6 gap-x-10 text-[#101820] p-10 rounded-lg">
+        <div className="grid grid-cols-3 grid-rows-3 gap-6 gap-x-10 text-[#101820] p-10 rounded-lg">
           <a target="blank" href="https://react.dev/">
             <FaReact className="text-2xl sm:text-3xl grow" />
           </a>
